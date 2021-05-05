@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #F5F7F7 !important;
+    padding-right: 65px;
+}
+
+.navbar-light .navbar-brand {
+    color: #F5F7F7 !important;
+    padding-right: 15px;
+    
+}
+
+.nav-back{
+    background-color: #1B6CE7 !important;
+}
+
+.navbar {
+	height: 90px;
+     box-shadow: 0px 4px 8px #888888;
+}
+.page-1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	background: url(./IMG/img-1.jpg);
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+}
+.page-1 .content h1{
+    display: inline-block;
+	font-size: 54px;
+	font-weight: 500;
+	color: #fff;
+	padding-bottom: 100px;
+	padding-left: 60px;
+}
+.page-1 .content h1 p{
+	font-size: 20px;
+	font-weight: 300;
+	color: #fff
+}
+
+.page-1 .content-1  .buttons-1{
+   background-color: #FB36A0; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+}
+.content-1 {
+	padding-bottom: 170px;
+	padding-right: 70px;
+	width: 95%;
+	padding-left: 100px;
+	font-size: 64px;
+	color: #fff;
+}
+.page-1 .content-1 .buttons-2{
+    background-color: #1B6CE7; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+}
+
+img{
+	width: 100%;
+	padding-right: 50px;
+
+}
+.footer {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+#footer {
+  background: #1B6CE7;
+  color: #fff;
+}
+
+#footer .container .row .col .icon {
+	padding-right: 850px;
+}
+#footer .container .row .col .icon a{
+	color:white;
+	margin: 10px;
+}
+#footer .container .row .col .icon a i{
+	font-size: 40px;
+}
+#footer .container .row .col .icon a:hover{
+	background: #0088CC
+	transition:1s;
+}
+#footer .container .row .col .icon a:hover i{
+	color: #f1f1f1;
+	transition: 1s;
+	transform: scale(1.3);
+}
