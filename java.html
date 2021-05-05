@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Tutorial</title>
+</head>
+<body>
+	<style>
+		body{
+			width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	background: url(./IMG/img-1.jpg);
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+		}
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding: 15px;
+}
+.square {
+    background-color: #2d2d2d;
+    box-shadow: 0 0 2px #000;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: 2s ease;
+}
+.square:hover { transition-duration: 0s;}
+</style>
+
+<div class="inner"></div>
+<script>
+    const inner = document.querySelector('.inner');
+    const squareColors = ['#ed220d', '#b542e5', '#0d93ed', '#f2770b', '#8affbc', '#f2ff8a', '#ff38c2', '#e37f35'];
+    const BLOCKS = 672;
+ 
+    for (let i = 0; i < BLOCKS; i++) {
+      const square = document.createElement('div');
+      square.classList.add('square');
+      square.addEventListener('mouseover', () => setColor(square));
+      square.addEventListener('mouseout', () => removeColor(square));
+      inner.appendChild(square)
+    }
+    function setColor(elem) {
+      const color = getRandomColor();
+      elem.style.background = color;
+      elem.style.boxShadow = `0 0 12px ${color}`;
+    }
+    function removeColor(elem) {
+      elem.style.background = '#2d2d2d';
+      elem.style.boxShadow = '0 0 4px #000';
+    }
+ 
+  const getRandomColor = () => squareColors[Math.floor(Math.random() * squareColors.length)];
+</script>
+</body>
+</html>
